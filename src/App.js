@@ -1,5 +1,7 @@
 import React, { useReducer } from "react";
 import "./App.css";
+import ParentComponent from "./components/useCallback/ParentComponent";
+import Counter from "./components/useMemo/Counter";
 // import ClassCounter from "./components/ClassCounter";
 // import ClassCounterTwo from "./components/ClassCounterTwo";
 // import HookCounter from "./components/HookCounter";
@@ -20,6 +22,14 @@ import "./App.css";
 import ComponentA from "./components/useReducer/ComponentA";
 import ComponentB from "./components/useReducer/ComponentB";
 import ComponentC from "./components/useReducer/ComponentC";
+import ClassTimer from "./components/useRef/ClassTimer";
+import FocusInput from "./components/useRef/FocusInput";
+import HookTimer from "./components/useRef/HookTimer";
+import CounterOne from "./CustomHook/CounterOne";
+import CounterTwo from "./CustomHook/CounterTwo";
+import DocTitleOne from "./CustomHook/DocTitleOne";
+import DocTitleTwo from "./CustomHook/DocTitleTwo";
+import UserForm from "./CustomHook/UserForm";
 
 export const CountContext = React.createContext();
 
@@ -65,6 +75,16 @@ function App() {
         <ComponentA />
         <ComponentB />
         <ComponentC />
+        <ParentComponent />
+        <Counter />
+        <FocusInput />
+        <ClassTimer />
+        <HookTimer />
+        <DocTitleOne />
+        <DocTitleTwo />
+        <CounterOne />
+        <CounterTwo />
+        <UserForm />
       </div>
     </CountContext.Provider>
   );
